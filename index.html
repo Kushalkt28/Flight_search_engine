@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Search Engine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="flight-title">
+        <h1> Flight Search Engine</h1>
+    </div>
+    <div class="Main-container">
+        <div class="Sub-container">
+            <div class="container-left-section">
+                <a href="https://www.amazon.com"> <button style="border-right: 0px;" class="btn" type="button"
+                        name="">One way</button> </a>
+            </div>
+            <div class="Form-section">
+                <form action="index.html" name="flight form">
+                    <input type="text" class="data" name="origincity" placeholder="Enter Origin City"><br>
+                    <input type="text" class="data" name="destinationcity" placeholder="Enter Destination city"><br>
+                    <input type="date" class="date" name="date" placeholder="Date"><br>
+                    <input type="date" class="date" name="returndate" placeholder="Return date"><br>
+                    <input type="text" class="data" name="passengers" placeholder="Passengers"><br>
+                    <input type="submit" class="submit" name="search" placeholder="search">
+
+
+                </form>
+            </div>
+            <div class="Range-section">
+                <h2>Select Flight Range Accordingly</h2>
+                <div class="pointer">
+                    <p class="p">0</p>
+                    <p>10000</p>
+                </div>
+                <input type="range" class="range">
+            </div>
+        </div>
+        <div class="Right-container">
+            <div class="header">
+                <h2>Jabalpur > Delhi > Jabalpur </h2>
+                <pre>
+                    Depart : 1st Jan 2023
+                    Return : 2nd Jan 2023
+                </pre>
+            </div>
+            <div class="Flight-cards">
+                <div class="Flight-img-price">
+                    <h2>Rs. 4000.00</h2>
+                    <table>
+                        <tr>
+                            <td class="td">AI-202</td>
+                            <td>AI-203</td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: bold ;" class="td">JLR>DEL</td>
+                            <td style="font-weight: bold ;">DEL>JLR</td>
+                        </tr>
+                        <tr>
+                            <td class="td">Depart: 10:00 AM</td>
+                            <td>Depart: 8:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td class="td">Arrival: 12:00 AM</td>
+                            <td>Arrival: 11:00 PM</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="Flight-card-image">
+                    <div>
+                        <img src="data:image/jpeg;base64,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"
+                            alt="">
+
+                        <button type="button" name="button">Book This Flight</button>
+                    </div>
+                </div>
+            </div>
+            <div class="Flight-cards">
+                <div class="Flight-img-price">
+                    <h2>Rs. 4000.00</h2>
+                    <table>
+                        <tr>
+                            <td class="td">AI-202</td>
+                            <td>AI-203</td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: bold;" class="td">JLR>DEL</td>
+                            <td style="font-weight: bold;">DEL>JLR</td>
+                        </tr>
+                        <tr>
+                            <td class="td">Depart: 10:00 AM</td>
+                            <td>Depart: 08:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td class="td">Arrival: 12:00 AM</td>
+                            <td>Arrival: 11:00 PM</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="Flight-card-image">
+                    <img src="data:image/jpeg;base64,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"
+                        alt=""><br>
+                    <button type="button" name="button">Book This Flight</button>
+
+                </div>
+            </div>
+            <div class="Flight-cards">
+                <div class="Flight-img-price">
+                    <h2>Rs. 4000.00</h2>
+                    <table>
+                        <tr>
+                            <td class="td">AI-202</td>
+                            <td>AI-203</td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: bold;" class="td">JLR>DEL</td>
+                            <td style="font-weight: bold;">DEL>JLR</td>
+                        </tr>
+                        <tr>
+                            <td class="td">Depart: 10:00 AM</td>
+                            <td>Depart: 08:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td class="td">Arrival: 12:00 AM</td>
+                            <td>Arrival: 11:00 PM</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="Flight-card-image">
+                    <img src="data:image/jpeg;base64,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"
+                        alt=""><br>
+                    <button type="button" name="button">Book This Flight</button>
+
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+
+    </div>
+</body>
+
+</html>
